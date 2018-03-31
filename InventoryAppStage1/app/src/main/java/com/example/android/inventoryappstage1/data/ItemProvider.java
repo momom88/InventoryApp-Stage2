@@ -12,9 +12,6 @@ import android.util.Log;
 
 import com.example.android.inventoryappstage1.data.StockContract.ItemEntry;
 
-/**
- * Created by marti on 3/26/2018.
- */
 
 public class ItemProvider extends ContentProvider {
 

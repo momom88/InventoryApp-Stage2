@@ -76,14 +76,14 @@
                 android:inputType="number"
                 style="@style/EditorFieldStyle" />
 
-            <!-- Breed field -->
+            <!-- supplier name field -->
             <EditText
                 android:id="@+id/edit_item_supplier_name"
                 android:hint="@string/hint_item_supplier_name"
                 android:inputType="textCapWords"
                 style="@style/EditorFieldStyle" />
 
-            <!-- Breed field -->
+            <!-- supplier phone field -->
             <EditText
                 android:id="@+id/edit_item_supplier_phone"
                 android:hint="@string/hint_item_supplier_phone"

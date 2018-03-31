@@ -64,7 +64,7 @@ public class ComputersFragment extends Fragment implements LoaderManager.LoaderC
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 // Create new intent to go to {@link EditorActivity}
-                Intent intent = new Intent(getActivity(), EditorActivity.class);
+                Intent intent = new Intent(getActivity(), InfoActivity.class);
 
                 // Form the content URI that represents the specific item that was clicked on,
                 // by appending the "id" (passed as input to this method) onto the

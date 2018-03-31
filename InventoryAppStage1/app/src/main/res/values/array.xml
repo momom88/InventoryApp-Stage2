@@ -7,6 +7,5 @@
             <item>@string/item_phone</item>
             <item>@string/item_headphones</item>
             <item>@string/item_computers</item>
-            <item>@string/item_tv</item>
         </string-array>
 </resources>

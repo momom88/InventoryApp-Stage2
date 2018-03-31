@@ -41,11 +41,11 @@ public class StockDbHelper extends SQLiteOpenHelper {
         // Create a String that contains the SQL statement to create the items table
         String SQL_CREATE_ITEMS_TABLE = "CREATE TABLE " + ItemEntry.TABLE_NAME + " ("
                 + ItemEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + ItemEntry.COLUMN_ITEM_CATEGORY + " INTEGER NOT NULL, "
+                + ItemEntry.COLUMN_ITEM_CATEGORY + " INTEGER, "
                 + ItemEntry.COLUMN_ITEM_NAME + " TEXT NOT NULL, "
-                + ItemEntry.COLUMN_ITEM_PRICE + " INTEGER NOT NULL, "
+                + ItemEntry.COLUMN_ITEM_PRICE + " INTEGER, "
                 + ItemEntry.COLUMN_ITEM_QUANTITY + " INTEGER NOT NULL DEFAULT 0, "
-                + ItemEntry.COLUMN_ITEM_SUPPLIER_NAME + " TEXT NOT NULL, "
+                + ItemEntry.COLUMN_ITEM_SUPPLIER_NAME + " TEXT, "
                 + ItemEntry.COLUMN_ITEM_SUPPLIER_PHONE_NUMBER + " INTEGER NOT NULL);";
 
         // Execute the SQL statement

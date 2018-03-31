@@ -14,12 +14,16 @@
     <!-- Label for editor overflow menu option that deletes the current item [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
 
+    <string name="action_edit_menu">Edit Item</string>
+
     <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
     <string name="category_items">Items</string>
 
+    <string name="call_to_supplier">Call to Supplier</string>
+
 
     <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
-    <string name="hint_item_name">Name</string>
+    <string name="hint_item_name">Product Name</string>
 
     <!-- Text hint for price field in the editor [CHAR LIMIT=30] -->
     <string name="hint_item_price">Price</string>
@@ -36,14 +40,11 @@
     <!-- Label for overflow menu option that deletes all item data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_items">Delete All Items</string>
 
-    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
-    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
-
-    <!-- Subtitle text for the empty view that prompts the user to add items [CHAR LIMIT=50] -->
-    <string name="empty_view_subtitle_text">Get started by adding items</string>
-
     <!-- Title for the activity to add a new item [CHAR LIMIT=20] -->
     <string name="editor_activity_title_new_item">Add a Item</string>
+
+
+    <string name="you_cannot_meet_less">You cannot have less than 0 Product</string>
 
     <!-- Title for the activity to edit an existing item [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_item">Edit Item</string>
@@ -91,9 +92,6 @@
     <!-- Label for dropdown menu option if the item is phone [CHAR LIMIT=20] -->
     <string name="item_phone">Phone</string>
 
-    <!-- Label for dropdown menu option if the item is tv [CHAR LIMIT=20] -->
-    <string name="item_tv">TV</string>
-
     <!-- Label for dropdown menu option if the item is camera [CHAR LIMIT=20] -->
     <string name="item_camera">Camera</string>
 
@@ -105,5 +103,6 @@
 
     <!-- Label for the item's breed if the item is unknown [CHAR LIMIT=20] -->
     <string name="item_unknown">Unknown item</string>
+    <string name="title_activity_info">InfoActivity</string>
 
 </resources>
