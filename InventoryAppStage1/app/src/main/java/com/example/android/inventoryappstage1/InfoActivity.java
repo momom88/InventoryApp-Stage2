@@ -57,6 +57,8 @@ public class InfoActivity extends AppCompatActivity implements
     /**
      * Supplier phone number for intent
      */
+
+    private TextView mNumberTextView;
     private int mNumber;
     /**
      * Boolean flag that keeps track of whether the item has been edited (true) or not (false)
@@ -93,6 +95,8 @@ public class InfoActivity extends AppCompatActivity implements
         mPriceTextView = (TextView) findViewById(R.id.item_price);
         mQuantityTextView = (TextView) findViewById(R.id.edit_item_quantity);
         mSupplierTextView = (TextView) findViewById(R.id.item_supplier_name);
+        mNumberTextView = (TextView) findViewById(R.id.item_supplier_phone);
+
     }
 
 
@@ -320,6 +324,7 @@ public class InfoActivity extends AppCompatActivity implements
             mPriceTextView.setText(Integer.toString(price));
             mQuantityTextView.setText(Integer.toString(quantity1));
             mSupplierTextView.setText(supplierName);
+            mNumberTextView.setText(Integer.toString(phoneNumber));
         }
     }
 

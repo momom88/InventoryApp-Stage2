@@ -43,17 +43,33 @@
     <!-- Title for the activity to add a new item [CHAR LIMIT=20] -->
     <string name="editor_activity_title_new_item">Add a Item</string>
 
+    <string name="list_item_name">Product:</string>
+    <string name="list_item_price">Price:</string>
+    <string name="list_item_quantity">In stock:</string>
+
 
     <string name="you_cannot_meet_less">You cannot have less than 0 Product</string>
 
     <!-- Title for the activity to edit an existing item [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_item">Edit Item</string>
 
+    <string name="sell_product_failed">Product Out of stock</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a pet [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a pet</string>
+
+    <string name="sell_product_button">Sell</string>
+
     <!-- Toast message in editor when new item has been successfully inserted [CHAR LIMIT=NONE] -->
     <string name="editor_insert_item_successful">Item saved</string>
 
     <!-- Toast message in editor when new item has failed to be inserted [CHAR LIMIT=NONE] -->
     <string name="editor_insert_item_failed">Error with saving item</string>
+
+    <string name="editor_insert_item_not_save">All information must be filled in</string>
 
     <!-- Toast message in editor when current item was successfully updated [CHAR LIMIT=NONE] -->
     <string name="editor_update_item_successful">Item updated</string>

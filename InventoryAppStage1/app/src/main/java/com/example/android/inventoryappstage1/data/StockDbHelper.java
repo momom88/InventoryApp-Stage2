@@ -43,7 +43,7 @@ public class StockDbHelper extends SQLiteOpenHelper {
                 + ItemEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + ItemEntry.COLUMN_ITEM_CATEGORY + " INTEGER, "
                 + ItemEntry.COLUMN_ITEM_NAME + " TEXT NOT NULL, "
-                + ItemEntry.COLUMN_ITEM_PRICE + " INTEGER, "
+                + ItemEntry.COLUMN_ITEM_PRICE + " INTEGER NOT NULL DEFAULT 0, "
                 + ItemEntry.COLUMN_ITEM_QUANTITY + " INTEGER NOT NULL DEFAULT 0, "
                 + ItemEntry.COLUMN_ITEM_SUPPLIER_NAME + " TEXT, "
                 + ItemEntry.COLUMN_ITEM_SUPPLIER_PHONE_NUMBER + " INTEGER NOT NULL);";

@@ -54,6 +54,10 @@ public class ComputersFragment extends Fragment implements LoaderManager.LoaderC
         // Find the ListView which will be populated with the item data
         ListView itemListView = (ListView) rootView.findViewById(R.id.list);
 
+        // Find and set empty view on the ListView, so that it only shows when the list has 0 items.
+        View emptyView = rootView.findViewById(R.id.empty_view);
+        itemListView.setEmptyView(emptyView);
+
         // Setup an Adapter to create a list item for each row of item data in the Cursor.
         // There is no item data yet (until the loader finishes) so pass in null for the Cursor.
         mCursorAdapter = new ItemCursorAdapter(getActivity(), null);
@@ -96,7 +100,8 @@ public class ComputersFragment extends Fragment implements LoaderManager.LoaderC
         String[] projection = {
                 ItemEntry._ID,
                 ItemEntry.COLUMN_ITEM_NAME,
-                ItemEntry.COLUMN_ITEM_QUANTITY};
+                ItemEntry.COLUMN_ITEM_QUANTITY,
+                ItemEntry.COLUMN_ITEM_PRICE};
         String selection = ItemEntry.COLUMN_ITEM_CATEGORY + " = ?";
         String[] selectionArgs = new String[]{String.valueOf(ItemEntry.ITEM_COMPUTERS)};
 

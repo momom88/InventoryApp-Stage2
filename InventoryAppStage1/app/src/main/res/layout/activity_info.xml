@@ -73,6 +73,15 @@
         android:hint="@string/hint_item_supplier_name"
         style="@style/InfoStyle" />
 
+    <TextView
+        android:text="@string/hint_item_supplier_phone"
+        style="@style/InfoStyle"/>
+
+    <TextView
+        android:id="@+id/item_supplier_phone"
+        android:hint="@string/hint_item_supplier_phone"
+        style="@style/InfoStyle" />
+
     <!-- supplier phone button to call -->
     <Button
         android:layout_width="wrap_content"
