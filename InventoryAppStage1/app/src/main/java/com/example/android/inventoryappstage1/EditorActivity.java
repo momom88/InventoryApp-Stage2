@@ -197,15 +197,7 @@ public class EditorActivity extends AppCompatActivity implements
 
         // Check if this is supposed to be a new item
         // and check if all the fields in the editor are blank
-        if (mCurrentItemUri == null && mCategory == ItemEntry.ITEM_UNKNOWN
-                ) {
-            // If the not complete not save items
-            Toast.makeText(this, getString(R.string.editor_insert_item_not_save),
-                    Toast.LENGTH_SHORT).show();
-            // Since no fields were modified, we can return early without creating a new item.
-            // No need to create ContentValues and no need to do any ContentProvider operations.
-            return;
-        }else if (TextUtils.isEmpty(nameString) && TextUtils.isEmpty(priceString)) {
+        if (TextUtils.isEmpty(nameString) && TextUtils.isEmpty(priceString)) {
             // If the not complete not save items
             Toast.makeText(this, getString(R.string.editor_insert_item_not_save),
                     Toast.LENGTH_SHORT).show();
